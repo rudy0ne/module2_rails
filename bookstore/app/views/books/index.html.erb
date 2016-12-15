@@ -1,0 +1,9 @@
+<h1 style="text-align: center; color: firebrick;">Here are ALL the books!</h1>
+
+
+<% @books.each do |book| %>
+<%= book.review %> </br>
+<%= book.sku %> </br>
+<%= book.author %> </br>
+
+<% end %>

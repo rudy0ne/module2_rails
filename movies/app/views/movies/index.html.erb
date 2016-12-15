@@ -1,0 +1,27 @@
+<h1 style="text-align: center; color: FireBrick;">Welcome to the movies page!</h1>
+
+<div style="background: lightgray; text-align: center; width: 450px; margin: 0 auto; padding: 10px;">
+<% @movies.each do |movie| %>
+
+
+	<div style="padding: 5px; text-align: center; font-size: 30px; border: solid blue;">
+	<%= movie.title %> 
+	</div>
+	<div style="height: 50px; padding: 5px; font-size: 15px;">(<%= movie.genre %>) 
+	</div>
+	<div style="height: 50px; padding: 10px;">
+	<p style="font-size: 12px;">directed by:</p>
+	<%= movie.director %> 
+	</div>
+	<div style="height: 50px; padding: 20px;">
+	<p style="font-size: 12px;">with:</p>
+	<%= movie.starring %>
+	</div>
+	
+	<div><p style="font-size: 12px;">rated a</p><p style="color: gold; font-size: 45px;"><%= movie.rating %></p><p style="font-size: 12px;">out of ten</p>
+	</div>
+	
+	<% end %>
+
+</div>
+
